@@ -40,4 +40,5 @@ int main(){
     // Report result
     printf("Size of %s is %d bytes.\n", filename, nofbytes); 
 
+    fclose(fileptr);
 }
