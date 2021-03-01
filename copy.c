@@ -27,7 +27,7 @@ int main(int argc, char * argv[]){
 
     if (toptr == NULL){
         printf("File %s could not be opened for writing!\n", tofilename);
-        close (fromptr);
+        fclose (fromptr);
         return EXIT_FAILURE;
     }
 
