@@ -52,6 +52,7 @@ int main(int argc, char * argv[]){
 
     if (toptr == NULL){
         printf("File %s could not be opened for writing!\n", tofilename);
+        fclose(fromptr);
         return EXIT_FAILURE;
     }
 
