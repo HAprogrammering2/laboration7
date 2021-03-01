@@ -27,6 +27,7 @@ int main(int argc, char * argv[]){
 
     if (toptr == NULL){
         printf("File %s could not be opened for writing!\n", tofilename);
+        close (fromptr);
         return EXIT_FAILURE;
     }
 
@@ -38,4 +39,6 @@ int main(int argc, char * argv[]){
     // Report result
     printf("File copied!\n"); 
 
+    fclose(fromptr);
+    fclose(toptr);
 }
