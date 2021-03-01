@@ -43,4 +43,5 @@ int main(){
     // Report result
     printf("%s contains %d lines.\n", filename, noflines); 
 
+    fclose(fileptr);
 }
